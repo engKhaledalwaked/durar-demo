@@ -23,10 +23,10 @@ export const wa = (text) => `https://wa.me/${site.whatsapp}?text=${encodeURIComp
 
 // فئات عامة (بدون أسعار — السعر يُرسل عبر واتساب)
 export const classes = [
-  { id: 'eco', seats: 5, bags: 2, t: { ar: 'اقتصادية', en: 'Economy' }, d: { ar: 'مثالية للمشاوير اليومية داخل المدينة', en: 'Ideal for daily city trips' }, path: 'M14 40h92l-6-12c-2-4-6-6-10-6H50c-6 0-10 2-14 6l-10 8H18c-3 0-4 2-4 4z' },
-  { id: 'sedan', seats: 5, bags: 3, t: { ar: 'سيدان عائلية', en: 'Family sedan' }, d: { ar: 'راحة ومساحة للعائلة والسفر', en: 'Comfort and space for family trips' }, path: 'M8 40h104l-4-10c-2-4-6-6-10-6H54c-8 0-12 2-18 6l-12 6H14c-4 0-6 2-6 4z' },
-  { id: 'suv', seats: 7, bags: 4, t: { ar: 'دفع رباعي SUV', en: 'SUV' }, d: { ar: 'للبر والسفر والعائلات الكبيرة', en: 'For desert trips, travel and big families' }, path: 'M8 40h104v-8c0-4-2-8-6-10l-10-6H40c-4 0-8 2-10 4l-10 10h-8c-2 0-4 2-4 4z' },
-  { id: 'lux', seats: 5, bags: 3, t: { ar: 'فاخرة', en: 'Luxury' }, d: { ar: 'للمناسبات ورجال الأعمال', en: 'For occasions and business' }, path: 'M6 40h108l-6-8c-3-4-8-6-14-7l-16-2c-6-5-12-7-20-7H46c-8 0-14 3-20 8l-8 4H12c-4 0-6 2-6 4z' },
+  { id: 'eco', seats: 5, bags: 2, t: { ar: 'اقتصادية', en: 'Economy' }, d: { ar: 'مثالية للمشاوير اليومية داخل المدينة', en: 'Ideal for daily city trips' } },
+  { id: 'sedan', seats: 5, bags: 3, t: { ar: 'سيدان عائلية', en: 'Family sedan' }, d: { ar: 'راحة ومساحة للعائلة والسفر', en: 'Comfort and space for family trips' } },
+  { id: 'suv', seats: 7, bags: 4, t: { ar: 'دفع رباعي SUV', en: 'SUV' }, d: { ar: 'للبر والسفر والعائلات الكبيرة', en: 'For desert trips, travel and big families' } },
+  { id: 'lux', seats: 5, bags: 3, t: { ar: 'فاخرة', en: 'Luxury' }, d: { ar: 'للمناسبات ورجال الأعمال', en: 'For occasions and business' } },
 ]
 export const periods = [
   { id: 'day', t: { ar: 'يومي', en: 'Daily' } },

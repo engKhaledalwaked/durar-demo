@@ -89,10 +89,18 @@ html[dir='rtl'] .booker { box-shadow: -10px 10px 0 var(--ink); }
 .cls { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 .cls button { border: 2px solid var(--line); background: var(--paper); border-radius: 12px; padding: 8px 4px; font-weight: 700; font-size: .82rem; display: flex; flex-direction: column; align-items: center; gap: 2px; transition: .15s; }
 .cls svg { width: 100%; height: 30px; }
-.cls svg path, .cl svg path { fill: var(--blue); }
-.cls svg circle, .cl svg circle { fill: var(--ink); stroke: #fff; stroke-width: 3; }
+.car { overflow: visible; }
+.car-body { fill: var(--blue); stroke: var(--ink); stroke-width: 2.5; stroke-linejoin: round; transition: fill .15s; }
+.car-win { fill: #dfe6ff; stroke: var(--ink); stroke-width: 1.8; stroke-linejoin: round; }
+.car-line { fill: none; stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.car-line.thin { stroke: #fff; stroke-width: 1.5; opacity: .7; }
+.car-head { fill: var(--yellow); stroke: var(--ink); stroke-width: 1.2; }
+.car-tail { fill: var(--red); stroke: var(--ink); stroke-width: 1.2; }
+.cls button.on .car-tail { fill: var(--yellow); }
+.car-wheel { fill: var(--ink); }
+.car-hub { fill: #fff; stroke: var(--ink); stroke-width: 1.5; }
 .cls button.on { border-color: var(--ink); background: var(--yellow); }
-.cls button.on svg path { fill: var(--red); }
+.cls button.on .car-body { fill: var(--red); }
 .seg { display: grid; grid-template-columns: repeat(3, 1fr); border: 2px solid var(--ink); border-radius: 12px; overflow: hidden; }
 .seg button { border: 0; background: #fff; padding: 10px; font-weight: 800; border-inline-end: 2px solid var(--ink); }
 .seg button:last-child { border: 0; }

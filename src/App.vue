@@ -1,6 +1,7 @@
 <script setup>
 import { ref, reactive, computed, onMounted, onUnmounted } from 'vue'
 import { t, tr, lang, toggleLang, img, site, wa, classes, periods, reviews } from './data'
+import CarIcon from './CarIcon.vue'
 
 const scrolled = ref(false)
 const onScroll = () => { scrolled.value = window.scrollY > 30 }
@@ -58,7 +59,7 @@ const year = new Date().getFullYear()
           <div class="lbl"><span>{{ t.form.class }}</span>
             <div class="cls">
               <button v-for="c in classes" :key="c.id" type="button" :class="{ on: f.cls === c.id }" @click="f.cls = c.id">
-                <svg viewBox="0 0 120 50" aria-hidden="true"><path :d="c.path" /><circle cx="34" cy="40" r="7" /><circle cx="88" cy="40" r="7" /></svg>
+                <CarIcon :type="c.id" />
                 {{ tr(c.t) }}
               </button>
             </div>
@@ -94,7 +95,7 @@ const year = new Date().getFullYear()
         <div class="head" v-reveal><p class="kicker">{{ t.classes.kicker }}</p><h2>{{ t.classes.title }}</h2></div>
         <div class="cl-grid">
           <article v-for="c in classes" :key="c.id" class="cl" v-reveal>
-            <svg viewBox="0 0 120 50" aria-hidden="true"><path :d="c.path" /><circle cx="34" cy="40" r="7" /><circle cx="88" cy="40" r="7" /></svg>
+            <CarIcon :type="c.id" />
             <h3>{{ tr(c.t) }}</h3>
             <p>{{ tr(c.d) }}</p>
             <ul><li>👤 {{ c.seats }} {{ t.form.seats }}</li><li>🧳 {{ c.bags }} {{ t.form.bags }}</li></ul>
